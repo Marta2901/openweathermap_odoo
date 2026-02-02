@@ -4,13 +4,12 @@ import requests
 import logging
 
 #Configurar el logger
-__logger = logging.getLogger(__name__)
+_logger = logging.getLogger(__name__)
 
 class WeatherInfo(models.Model):
-    __name = 'weather.info'
-    __description = 'Weather Information'
-
-    __rec_name = 'city'
+    _name = 'weather.info'
+    _description = 'Weather Information'
+    _rec_name = 'city'
 
     city = fields.Char(string='City', required=True)
     api_key = fields.Char(string='API Key', required=True)
@@ -19,7 +18,7 @@ class WeatherInfo(models.Model):
 
     def get_weather_data(self):
         #Contruir la URL para hacer la solicitud a la API de OpenWeatherMap
-        api_url = f"http://api.openweathermap.org/data/2.5/weather?q={self.city} &appid={self.api_key}&units=metric&lang=es"
+        api_url = f"http://api.openweathermap.org/data/2.5/weather?q={self.city}&appid={self.api_key}&units=metric&lang=es"
 
         try:
             #Hacer la solicitud GET a la API

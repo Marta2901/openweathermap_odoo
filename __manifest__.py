@@ -13,5 +13,5 @@
     'installable': True,
     'application': True,
     'license': 'LGPL-3',
-    'icon':['/openweathermao_odoo/static/description/icon57.png'],
+    'icon':['/openweathermap_odoo/static/description/icon57.png'],
 }
