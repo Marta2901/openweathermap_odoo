@@ -36,5 +36,5 @@ class WeatherInfo(models.Model):
         
         except requests.exceptions.RequestException as e:
             #Manejar las excepciones de la solicitud HTTP
-            __logger.error("Error al intentar obtener los datos del clima: %s", str(e))
+            _logger.error("Error al intentar obtener los datos del clima: %s", str(e))
             raise UserError("Hubo un error al conectarse a la API")
