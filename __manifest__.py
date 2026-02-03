@@ -6,12 +6,12 @@
     'author': 'Marta Enríquez Figueroa',
     'category': 'Tools',
     'depends': ['base'],
+    'icon':'/openweathermap_odoo/static/description/icon57.png',
     'data': [
-        'security/ir.model.access.csv',
         'views/weather_view.xml',
+        'security/ir.model.access.csv',
     ],
     'installable': True,
     'application': True,
     'license': 'LGPL-3',
-    'icon':['/openweathermap_odoo/static/description/icon57.png'],
 }
