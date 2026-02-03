@@ -8,8 +8,8 @@
     'depends': ['base'],
     'icon':'/openweathermap_odoo/static/description/icon57.png',
     'data': [
-        'views/weather_view.xml',
         'security/ir.model.access.csv',
+        'views/weather_view.xml',
     ],
     'installable': True,
     'application': True,
